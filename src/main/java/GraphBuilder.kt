@@ -58,8 +58,6 @@ class GraphBuilder {
             }
             return result;
         }
-
-
         override fun getConnections(v: Graph.Vertex): Map<Graph.Vertex, Graph.Edge> {
             val edges = connections[v] ?: emptySet()
             val result = mutableMapOf<Graph.Vertex, Graph.Edge>()
